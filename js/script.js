@@ -1,5 +1,5 @@
 // event pada saat link di klik
-$('.nav-link').on('click', function(e){
+$('.page-scroll').on('click', function(e){
 	var tujuan = $(this).attr('href');
 	var elementTujuan = $(tujuan);
 
