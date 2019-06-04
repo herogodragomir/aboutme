@@ -31,6 +31,10 @@ $(window).scroll(function() {
 
 	// portfolio
 	if (wScroll > $('.portfolio').offset().top - 350) {
-		$('.portfolio .img-thumbnail').addClass('muncul')
+		$('.portfolio .img-thumbnail').each(function(i) {
+			setTimeout(function() {
+				$('.portfolio .img-thumbnail').eq(i).addClass('muncul');
+			}, 300 * (i+1));
+		});
 	}
 });
