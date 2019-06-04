@@ -15,6 +15,7 @@ body {
 	background-position: 0px -90px;
 	color: #eaeaea;
 	overflow: hidden;
+	margin-bottom: 0px;
 }
 
 .jumbotron img {
@@ -34,10 +35,22 @@ hr {
 
 section {
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .portfolio {
 	background-color: #eee;
+}
+
+.portfolio .img-thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .img-thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .contact {

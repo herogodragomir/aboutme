@@ -26,4 +26,11 @@ $(window).scroll(function() {
 	$('.jumbotron p').css({
 		'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
 	});
+
+	console.log(wScroll)
+
+	// portfolio
+	if (wScroll > $('.portfolio').offset().top - 350) {
+		$('.portfolio .img-thumbnail').addClass('muncul')
+	}
 });
