@@ -7,9 +7,24 @@ body {
 	margin-bottom: 120px;
 }
 
+.jumbotron {
+	height: 400px;
+	background-image: url(../img/header-bg.jpg);
+	background-attachment: inherit;
+	background-size: cover;
+	background-position: 0px -90px;
+	color: #eaeaea;
+	overflow: hidden;
+}
+
 .jumbotron img {
 	width: 200px;
-	border: 5px solid #666;
+	border: 5px solid #eaeaea;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 hr {
